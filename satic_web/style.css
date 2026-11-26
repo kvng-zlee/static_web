@@ -1,0 +1,149 @@
+.logo img {
+    width: 60%;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.hamburger {
+
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    
+}
+
+.closeBtn{
+    display: none;
+}
+
+.mobileNav{
+    display: none;
+}
+
+.nav{
+    padding: 0 2rem 0 0; 
+}
+
+
+.manPic{
+    display: flex;
+    justify-content: center;
+}
+
+.mainPic{
+    border: 1px solid black;
+    min-height: 10vh;
+    width: 180px;
+    margin: 18px 0 0 0;
+}
+
+.otherPics{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    transition: transform 0.3s ease;
+}
+
+.otherPics img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.Pics{
+    margin-right: 30px;
+    border: 1px solid black;
+    min-height: 8vh;
+    width: 60px;
+    
+}
+
+.light{
+    display: none;
+}
+
+@media (max-width: 322px) {
+    body{
+        position: relative;
+
+    }
+
+    .navBar{
+        padding: 0;
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        cursor: pointer;
+        border: none;
+        background-color: white;
+        padding: 8px;
+    }
+
+    .mobileNav{
+        margin-right: 0;
+        background-color: green;
+        position: absolute;
+        height: 100vh;
+        width: 50vw;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        right: 100rem;
+        transition: left 3s ease;
+    }
+    .closeBtn{
+        display: flex;
+        justify-content: right;
+        bottom: 27rem;
+        font-size: 35px;
+        border: none;
+        background-color: green;
+    }
+
+    .left{
+        left: 0;
+    }
+
+    .nav{
+        display: none;
+    }
+    .mainPic{
+    border: 1px solid black;
+    min-height: 10vh;
+    min-width: 10vw;
+    width: 100px;
+    margin: 18px 0 0 0;
+    }
+
+    .Pics{
+        margin-right: 20px;
+        border: 1px solid black;
+        min-height: 30px;
+        min-width: 10vw;
+        margin-left: 5px;
+        /* position: relative; */
+    
+    }
+    /* .otherPics{
+        min-height: 30px;
+        min-width: 10vw;
+    }*/
+
+}
+
+
+/* @media (min-width: 768px) {
+    .hamburger{
+        display: none;
+    }
+}*/

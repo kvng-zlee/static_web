@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+            /* border: 1px solid red; */
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            scroll-behavior: smooth;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* gap:3rem; */
+        }
+
+        .navBar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 5px;
+            border-bottom: 1px solid black;
+            position: relative;
+            min-height: 10vh;
+        }
+
+        .body {
+            min-height: 80vh;
+
+
+        }
+
+        ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        li {
+            cursor: pointer;
+        }
+
+        .footer {
+            height: 10vh;
+            border-top: 1px solid black;
+            display: grid;
+            place-items: center;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navBar">
+            <div class="logo">
+                <img src="Annotation 2026-04-29 152850.png" alt="web logo">
+            </div>
+            <ul class="nav">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>FAQ</li>
+            </ul>         
+            <div class="icons">
+                <img src="dark_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="dark_mode" class="dark mode">
+                <img src="light_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="light_mode" class="light mode">
+            </div>
+
+            <button class="hamburger ">
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            </button>
+
+
+        </nav>
+
+        <div class="body">
+            <ul class="mobileNav left">
+                <button class="closeBtn">
+                    &times;
+                </button>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>FAQ</li>
+            </ul>   
+            <div class="manPic">
+                <img src="anilsharma26-animal-7696581_1920.jpg" alt="animal pic" class="mainPic">
+            </div>
+            <div class="otherPics">
+                <img src="anilsharma26-animal-7696581_1920.jpg" alt="animal pic" class="Pics">
+                <img src="assoxxx90-fox-6538422_1920.jpg" alt="animal pic" class="Pics">
+                <img src="istockphoto-1129459411-1024x1024.jpg" alt="animal pic" class="Pics">
+                <img src="leiflinding-tiger-5292207_1920.jpg" alt="animal pic" class="Pics">
+                <img src="sunwise-studio-rabbit-5446232_1920.jpg" alt="animal pic" class="Pics">
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            29th JULY,2026
+        </footer>
+
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
